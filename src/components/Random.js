@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Spinner from "./Spinner";
 import useGif from "../hooks/useGif";
 
@@ -17,7 +17,7 @@ const{gif,loading,fetchData} = useGif();
       <h1 className="text-2xl underline uppercase font-bold">Random Gif</h1>
 
       {
-        loading ? (<Spinner/>) : (<img src={gif} width="450" />)
+        loading ? (<Spinner/>) : (<img src={gif} width="450" alt="Gif"/>)
       }
       
       <button className=" w-10/12 bg-white text-lg py-2 rounded-lg mb-[20px]" onClick={onClickHandler}> Generate</button>
