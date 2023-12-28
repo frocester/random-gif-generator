@@ -25,6 +25,7 @@ const useGif = (tag) => {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line
   }, []);
 
   return{gif,loading,fetchData};
